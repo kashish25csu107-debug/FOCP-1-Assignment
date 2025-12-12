@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main() {
-    int choice, n, temp, bin = 0, rem, place = 1;
+    int choice, n, temp, rem;
     printf("1. Binary to Decimal\n2. Decimal to Binary\nEnter choice: ");
     scanf("%d", &choice);
     if (choice == 1) {
@@ -19,6 +19,7 @@ int main() {
         printf("Enter decimal: ");
         scanf("%d", &n);
         temp = n;
+         int bin = 0, place = 1;
         while (temp > 0) {
             rem = temp % 2;
             bin += rem * place;
@@ -29,3 +30,4 @@ int main() {
     }
     return 0;
 }
+
